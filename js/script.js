@@ -147,6 +147,6 @@ function removePolishChars(text) {
 }
 
 const greetings = ['czesc', 'dzien dobry', 'hej', 'dobry wieczor', 'siema', 'witaj', 'witam', 'witaj', 'przywitam'];
-const day = ['poniedzialek', 'wtorek', 'sroda', 'czwartekr', 'piatek', 'sobota', 'niedziela'];
+const day = ['poniedzialek', 'wtorek', 'sroda', 'czwartek', 'piatek', 'sobota', 'niedziela'];
 const badWords = ['kurla', 'kura']
 const commends = ['/version', '/pogoda kraków']
