@@ -1,0 +1,63 @@
+.container {
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  height: 500px;
+  width: 300px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.chatbox{
+ border: 2px solid black;
+ width: 300px;
+ height: 400px;
+ overflow-y: auto;
+ display: flex;
+  flex-direction: column;
+ 
+}
+
+.human_message{
+  background-color: antiquewhite;
+  display: block;  
+  margin: 2px;
+  max-width: 200px;
+  width: fit-content;
+  padding: 0px 5px;
+  align-self: flex-end;
+  overflow-wrap: break-word;
+  border-radius: 30%;
+}
+
+.bot_message{
+  background-color: beige;
+  display: block;  
+  margin: 2px;
+  max-width: 200px;
+  width: fit-content;
+  padding: 0px 5px;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  border-radius: 30%;
+}
+
+.inputarea{
+   max-width: 300px;
+   min-width: 300px;
+   height: 40px;    
+} 
+
+.alertMessage{
+  background-color: red;
+  display: block;  
+  margin: 2px;
+  max-width: 200px;
+  width: fit-content;
+  padding: 0px 5px;
+  align-self: center;
+}
