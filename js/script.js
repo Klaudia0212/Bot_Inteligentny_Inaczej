@@ -96,7 +96,7 @@ function botMessage(humanMessage){
     const message = humanMessage.toLowerCase();
     const messageNoAccent = removePolishChars(message);
     
-    const greetingResult = greetingFuse.search(messageNoAccent);
+
     for (let i = 0; i < greetings.length; i++){
         if(greetingResult.length > 0) {
             return "Miło mi, jaki jest dzisiaj dzień tygodnia?";
