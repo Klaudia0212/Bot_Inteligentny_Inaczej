@@ -1,5 +1,7 @@
+
 const button = document.getElementById('send');
 const textArea = document.querySelector('textarea');
+
 
 button.addEventListener('click', addMessageToChat)
 
@@ -94,8 +96,9 @@ function botMessage(humanMessage){
     const message = humanMessage.toLowerCase();
     const messageNoAccent = removePolishChars(message);
     
+    const greetingResult = greetingFuse.search(messageNoAccent);
     for (let i = 0; i < greetings.length; i++){
-        if(messageNoAccent.includes(greetings[i])){
+        if(greetingResult.length > 0) {
             return "Miło mi, jaki jest dzisiaj dzień tygodnia?";
         }
     }
@@ -148,5 +151,5 @@ function removePolishChars(text) {
 
 const greetings = ['czesc', 'dzien dobry', 'hej', 'dobry wieczor', 'siema', 'witaj', 'witam', 'witaj', 'przywitam'];
 const day = ['poniedzialek', 'wtorek', 'sroda', 'czwartek', 'piatek', 'sobota', 'niedziela'];
-const badWords = ['kurla', 'kura']
+const badWords = ['kurla', 'kura', 'dupa']
 const commends = ['/version', '/pogoda kraków']
